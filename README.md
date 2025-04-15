@@ -28,4 +28,6 @@ Any logs generated during script runs can be accessed inside the `logs` folder. 
 
 This project was developed by Paul Bryan Elefante as a requirement of the Data Management Bootcamp 2025 hosted by Solvento.
 
+The project can be cloned from Github using the following: ```https://github.com/vry421/solvento_bootcamp_hw1.git```
+
 ---
