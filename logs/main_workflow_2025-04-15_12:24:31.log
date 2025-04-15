@@ -1,0 +1,52 @@
+=====================================================================================================
+[MAIN] This is a workflow designed by Paul Bryan Elefante
+[MAIN] to be submitted to Solvento Philippines Inc.
+[MAIN] as a requirement for the Data Management Bootcamp 2025.
+------------------------------------------------------------------------------------------
+[MAIN] Will now execute a perform an operation to call a
+[MAIN] Talend script for an ETL process.
+------------------------------------------------------------------------------------------
+[MAIN] Creating backups for customer tables.
+[MAIN] Table rollback will be performed in case of errors.
+[CFU_BACKUP_TABLE] Creating Backup for CUSTOMER_INFO.
+[CFU_BACKUP_TABLE] Backup Creation Successful for CUSTOMER_INFO.
+[CFU_BACKUP_TABLE] Creating Backup for CUSTOMER_ADDRESS.
+[CFU_BACKUP_TABLE] Backup Creation Successful for CUSTOMER_ADDRESS.
+[CFU_BACKUP_TABLE] Creating Backup for CUSTOMER_DIM.
+[CFU_BACKUP_TABLE] Backup Creation Successful for CUSTOMER_DIM.
+------------------------------------------------------------------------------------------
+[MAIN] Retrieving latest business date from table 'OM_BUSINESSDATE'.
+[MAIN] Current Business Date: 2025-04-02.
+------------------------------------------------------------------------------------------
+[MAIN] Will now run Talend pipeline.
+[TALEND_EXECUTE] Executing Talend Scripts.
+[TALEND_EXECUTE] Will now execute Talend workflow for dataloading on date 2025-04-02
+[RUN_TALEND_DATALOADING] Performing Data Loading.
+[RUN_TALEND_DATALOADING] PostgreSQL Connection Established. Performing Subjobs.
+[RUN_TALEND_DATALOADING] Loading Information Data Successful.
+[RUN_TALEND_DATALOADING] Loading Address Data Successful.
+[RUN_TALEND_ETL] Performing ETL Process.
+[RUN_TALEND_ETL] PostgreSQL Connection Established.
+[RUN_TALEND_ETL] Starting Data Insertion.
+[RUN_TALEND_ETL] Data Insertion Successful.
+[RUN_TALEND_ETL] Starting Table Updates.
+[RUN_TALEND_ETL] Status Update Successful.
+[RUN_TALEND_ETL] Information Update Successful.
+[RUN_TALEND_ETL] Number of Records Inserted: 3
+[RUN_TALEND_ETL] Number of Records with Status Change Updated: 0
+[RUN_TALEND_ETL] Number of Records with Information Change Updated: 0
+[MAIN] Talend processes finished.
+------------------------------------------------------------------------------------------
+[MAIN] Total number of records modified or added: 3.
+[MAIN] Will now update table 'OM_TASK_RUN'.
+[MAIN] 'OM_TASK_RUN' update process finished.
+------------------------------------------------------------------------------------------
+[MAIN] Will now update businessdate in OM_BUSINESSDATE.
+[SET_BUSINESSDATE] Updating business date to '2025-04-03'.
+[SET_BUSINESSDATE] Successfully updated table OM_BUSINESSDATE.
+[MAIN] 'OM_BUSINESSDATE' update process finished.
+------------------------------------------------------------------------------------------
+[MAIN] Main workflow process finished.
+[MAIN] Performing cleanup of temporary and irrelevant files.
+[MAIN] Overall Processes Finished.
+=====================================================================================================
