@@ -70,13 +70,13 @@ cfu_exec_postgres_query()
             -h "${PG_DB_HOST}" \
             -U "${PG_DB_USER}" \
             -d "${PG_DB_NAME}" \
-            -c "${query}" >/dev/null 2>${log_error}
+            -c "${query}" >/dev/null 2>>"${log_error}"
     else
         PGPASSWORD="${PG_DB_PASSWORD}" psql \
             -h "${PG_DB_HOST}" \
             -U "${PG_DB_USER}" \
             -d "${PG_DB_NAME}" \
-            -c "${query}" 2>${log_error}
+            -c "${query}" 2>>"${log_error}"
     fi
     
     local ret_cd=$?

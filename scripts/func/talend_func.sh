@@ -19,7 +19,6 @@ run_talend_dataloading()
     local me=run_talend_dataloading
 
     local process_date=$1
-    local log_error="${LOGS}/error__${logdate}.log" # Redefine log_error with two underscores due to weird bash outputs
     
     cfu_log "${me}" "Performing Data Loading."
 
@@ -49,7 +48,6 @@ run_talend_etl()
     local me=run_talend_etl
     local process_date=$1
 
-    local log_error="${LOGS}/error__${logdate}.log" # Redefine log_error with two underscores due to weird bash outputs
     cfu_log "${me}" "Performing ETL Process."
 
     local mod_flag=0
